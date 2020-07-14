@@ -10,6 +10,12 @@ header {
   background-color:#3a4571;
   text-align:center;
   color:#fff;
+	padding:20px 0;
+}
+
+main {
+	margin-top: 30px;
+	margin-bottom: 40px;
 }
 
 footer {
@@ -23,6 +29,6 @@ footer a {
 }
 
 footer a:hover {
-  color:#3dbc93;
-  text-decoration: underline;
+  color:#ffffff;
+	text-decoration: none;
 }

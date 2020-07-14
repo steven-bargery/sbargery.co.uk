@@ -1,20 +1,34 @@
 <html>
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172645725-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-172645725-1');
+  </script>
+
   <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Steven Bargery's personal website">
+  <meta name="keywords" content="Steven, Bargery, personal, website, aws, cloud">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>sbargery.co.uk</title>
 
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <script src="https://kit.fontawesome.com/beed3e70f6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <header class="pt-3 pb-3">
+  <header>
     <img src="images/profile.jpg" class="rounded-circle mb-3" alt="profile photo">
     <h1>Hello and welcome to sbargery.co.uk</h1>
     <h4>The personal website of Steven Bargery</h4>
@@ -23,7 +37,7 @@
   <main>
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-10 mt-3">
+        <div class="col-10">
           <p>This is a static website hosted on AWS using a serverless architecture. It utilises the following AWS services:</p>
 
           <ul>
@@ -43,9 +57,12 @@
   <footer>
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-10 pt-2">
-          <p><a href="https://www.linkedin.com/in/steven-bargery/">LinkedIn</a>
-          <p>Last updated: <b>13th July 2020</b></p>
+        <div class="col-10 pt-3">
+          <p>
+            <a href="https://www.linkedin.com/in/steven-bargery/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+            <a href="https://github.com/steven-bargery" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          </p>
+          <p>Last updated: <b>14th July 2020</b></p>
         </div>
       </div>
     </div>
@@ -55,5 +72,4 @@
   <script src="js/bootstrap.min.js"></script>
 
 </body>
-
 </html>
