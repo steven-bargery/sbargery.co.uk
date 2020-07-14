@@ -1,0 +1,28 @@
+html, body {
+	height: 100%;
+	font-family: "Muli", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+  text-align: center;
+}
+
+header {
+  background-color:#3a4571;
+  text-align:center;
+  color:#fff;
+}
+
+footer {
+  background-color:#3a4571;
+  text-align:center;
+  color:#fff;
+}
+
+footer a {
+  color:#3dbc93;
+}
+
+footer a:hover {
+  color:#3dbc93;
+  text-decoration: underline;
+}

@@ -1,26 +1,59 @@
 <html>
 <head>
-<title>sbargery.co.uk</title>	
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>sbargery.co.uk</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 </head>
 
 <body>
 
-<img src="images/profile.jpg" alt="">
-    
-<h1>Welcome to sbargery.co.uk</h1>
+  <header class="pt-3 pb-3">
+    <img src="images/profile.jpg" class="rounded-circle mb-3" alt="profile photo">
+    <h1>Hello and welcome to sbargery.co.uk</h1>
+    <h4>The personal website of Steven Bargery</h4>
+  </header>
 
-<p>This is a static website hosted on AWS using a serverless architecture. It utilises the following AWS services:</p>
-    
-<ul>
-    <li><b>S3</b> - for hosting the actual content of the website</li>
-    <li><b>CloudFront</b> - for distributing the content from the S3 bucket (origin) and providing a secure connection (HTTPS)</li>
-    <li><b>Route 53</b> - for routing the requests for sbargery.co.uk and www.sbargery.co.uk to the Cloudfront distributions</li>
-    <li><b>ACM</b> - for the SSL certificate</li>
-</ul>
+  <main>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-10 mt-3">
+          <p>This is a static website hosted on AWS using a serverless architecture. It utilises the following AWS services:</p>
 
-<p>As you can see it's very bare at the moment. Over the next few weeks I plan to develop this website to host my resume, updating it through GitHub with CI/CD. It will also use AWS's API Gateway, Lambda and DynamoDB services.</p>
-    
-    <p>Last updated: <b>12th July 2020</b></p>
+          <ul>
+              <li><b>S3</b> - for hosting the actual content of the website</li>
+              <li><b>CloudFront</b> - for distributing the content from the S3 bucket (origin) and providing a secure connection (HTTPS)</li>
+              <li><b>Route 53</b> - for routing the requests for sbargery.co.uk and www.sbargery.co.uk to the Cloudfront distributions</li>
+              <li><b>ACM</b> - for the SSL certificate</li>
+              <li><b>CodePipeline</b> - for CI/CD with my GitHub repository</li>
+          </ul>
+
+          <p>As you can see it's very bare at the moment. Over the next few weeks I plan to develop this website to host my resume. It will also use AWS's API Gateway, Lambda and DynamoDB services.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-10 pt-2">
+          <p><a href="https://www.linkedin.com/in/steven-bargery/">LinkedIn</a>
+          <p>Last updated: <b>13th July 2020</b></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
