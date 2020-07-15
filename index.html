@@ -37,7 +37,7 @@
   <main>
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-10">
+        <div class="col-11 col-md-8">
           <p>This is a static website hosted on AWS using a serverless architecture. It utilises the following AWS services:</p>
 
           <ul>
@@ -47,7 +47,16 @@
               <li><b>ACM</b> - for the SSL certificate</li>
               <li><b>CodePipeline</b> - for CI/CD with my GitHub repository</li>
           </ul>
-
+        </div>
+        <div class="col-8 col-md-2">
+          <figure class="figure">
+            <img src="images/architecture.jpg" data-original="images/architecture.jpg" class="img-thumbnail img-zoomable" alt="AWS Architecture Diagram" />
+            <figcaption class="figure-caption text-right">AWS Architecture Diagram</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-11 col-md-10">
           <p>As you can see it's very bare at the moment. Over the next few weeks I plan to develop this website to host my resume. It will also use AWS's API Gateway, Lambda and DynamoDB services.</p>
         </div>
       </div>
@@ -70,6 +79,6 @@
 
   <script src="js/main.js"></script>
   <script src="js/bootstrap.min.js"></script>
-
+  <script src="js/zooming.min.js"></script>
 </body>
 </html>
