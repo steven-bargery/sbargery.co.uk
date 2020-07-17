@@ -9,19 +9,33 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 
-const headers = new Headers({
-    'Access-Control-Allow-Headers': 'Access-Control-Allow-Headers, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers',
-    'Content-Type': 'application/json',
-    'Accept': 'application/json',
-    'Access-Control-Allow-Origin': '*'
-});
+// POST API REQUEST
+async function post_visitor() {
+  try {
+    let response = await fetch('https://4ptmnr3qf5.execute-api.us-east-1.amazonaws.com/production/visitors', {
+      method: 'post'
+    });
+    let data = await response.json()
+    //console.log(data);
+    return data;
+  } catch(err) {
+    console.error(err);
+  }
+}
 
-const request = new Request('https://4ptmnr3qf5.execute-api.us-east-1.amazonaws.com/production/visitors', {
-    headers: headers
-});
+// GET API REQUEST
+async function get_visitors() {
+  // call post api request function
+  await post_visitor();
+  try {
+    let response = await fetch('https://4ptmnr3qf5.execute-api.us-east-1.amazonaws.com/production/visitors');
+    let data = await response.json()
+    document.getElementById("visitors").innerHTML = data['body'] + " visitors";
+    //console.log(data);
+    return data;
+  } catch(err) {
+    console.error(err);
+  }
+}
 
-fetch(request)
-.then(response => response.json())
-.then(jsonResponse => {
-  console.log(jsonResponse);
-});
+get_visitors();
