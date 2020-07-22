@@ -13,7 +13,10 @@ document.addEventListener('DOMContentLoaded', function () {
 async function post_visitor() {
   try {
     let response = await fetch('https://4ptmnr3qf5.execute-api.us-east-1.amazonaws.com/production/visitors', {
-      method: 'post'
+      method: 'POST',
+      headers: {
+        'x-api-key': 'JslbDfdt1F8fl7wE4CRIj1Oqidmtmzqw4lZ539Sj'
+      }
     });
     let data = await response.json()
     //console.log(data);
@@ -28,7 +31,12 @@ async function get_visitors() {
   // call post api request function
   await post_visitor();
   try {
-    let response = await fetch('https://4ptmnr3qf5.execute-api.us-east-1.amazonaws.com/production/visitors');
+    let response = await fetch('https://4ptmnr3qf5.execute-api.us-east-1.amazonaws.com/production/visitors', {
+      method: 'GET',
+      headers: {
+        'x-api-key': 'JslbDfdt1F8fl7wE4CRIj1Oqidmtmzqw4lZ539Sj',
+      }
+    });
     let data = await response.json()
     document.getElementById("visitors").innerHTML = data['body'] + " visitors";
     //console.log(data);
