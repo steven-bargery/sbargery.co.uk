@@ -1,6 +1,6 @@
 # sbargery.co.uk
 
-This is a static website hosted on AWS using a serverless architecture. It utilises the following AWS services:
+I built this site to learn and develop my AWS skills. This is a static website hosted on AWS using a serverless architecture. It utilises the following AWS services:
 
 * **S3** - for hosting the actual content of the website
 * **CloudFront** - for distributing the content from the S3 bucket (origin) and providing a secure connection (HTTPS)
@@ -9,3 +9,13 @@ This is a static website hosted on AWS using a serverless architecture. It utili
 * **CodePipeline** - for CI/CD with my GitHub repository
 
 It's very bare at the moment. Over the next few weeks I plan to develop this website to host my resume. It will also use AWS's API Gateway, Lambda and DynamoDB services.
+
+## Update: 21st July 2020
+
+I have now added a visitor counter to the footer of this website. It uses the following AWS services:
+
+* **DynamoDB** - to store visitors to the site
+* **Lambda** - to read and write to the DynamoDB table using 2 functions written in Python
+* **API Gateway** - to accept REST API requests from this site and communicate with the Lambda functions
+
+I then used Javascript to call the GET and POST API requests.
