@@ -10,7 +10,7 @@ I built this site to learn and develop my AWS skills. This is a static website h
 
 It's very bare at the moment. Over the next few weeks I plan to develop this website to host my resume. It will also use AWS's API Gateway, Lambda and DynamoDB services.
 
-## Update: 21st July 2020
+## Update: 21st July 2020 - Visitor Counter Added
 
 I have now added a visitor counter to the footer of this website. It uses the following AWS services:
 
@@ -18,4 +18,9 @@ I have now added a visitor counter to the footer of this website. It uses the fo
 * **Lambda** - to read and write to the DynamoDB table using 2 functions written in Python
 * **API Gateway** - to accept REST API requests from this site and communicate with the Lambda functions
 
-I then used Javascript to call the GET and POST API requests.
+I then used JavaScript to call the GET and POST API requests.
+
+## Update: 28th July 2020 - CI/CD integration
+I created a new GitHub repository for my Lambda functions so I could work on them locally and then deploy them automatically to AWS Lambda.
+
+Once pushed to GitHub, using GitHub Actions and workflow .yml files, both functions are unit tested using pytest with their corresponding test_*.py files and are then deployed to AWS Lambda.
