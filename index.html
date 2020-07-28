@@ -59,7 +59,7 @@
         <div class="col-11 col-md-10">
           <p>As you can see it's very bare at the moment. Over the next few weeks I plan to develop this website to host my resume. It will also use AWS's API Gateway, Lambda and DynamoDB services.</p>
 
-          <h2>Update: 21st July 2020</h2>
+          <h2 class="mt-4">Update: 21st July 2020 - Visitor Counter Added</h2>
           <p>I have now added a visitor counter to the footer of this website. It uses the following AWS services:</p>
           <ul>
             <li><b>DynamoDB</b> - to store visitors to the site</li>
@@ -67,6 +67,10 @@
             <li><b>API Gateway</b> - to accept REST API requests from this site and communicate with the Lambda functions</li>
           </ul>
           <p>I then used Javascript to call the GET and POST API requests.</p>
+
+          <h2 class="mt-4">Update: 28th July 2020 - CI/CD integration</h2>
+          <p>I created a new GitHub repository for my Lambda functions so I could work on them locally and then deploy them automatically to AWS Lambda.</p>
+          <p>Once pushed to Github, using Github Actions and workflow .yml files, both functions are unit tested using pytest with their corresponding test_*.py files and are then deployed to AWS Lambda.</p>
         </div>
       </div>
     </div>
@@ -80,7 +84,7 @@
             <a href="https://www.linkedin.com/in/steven-bargery/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> |
             <a href="https://github.com/steven-bargery" target="_blank"><i class="fab fa-github"></i> GitHub</a>
           </p>
-          <p>Last updated: <b>21st July 2020</b></p>
+          <p>Last updated: <b>28th July 2020</b></p>
           <p id="visitors">&nbsp;</p>
         </div>
       </div>
