@@ -15,6 +15,7 @@ header {
 
 header h4 {
 	color:#98a3ae;
+	padding: 0 5px;
 }
 
 main {
@@ -30,6 +31,7 @@ footer {
 
 footer a {
   color:#3dbc93;
+	white-space: nowrap;
 }
 
 footer a:hover {
