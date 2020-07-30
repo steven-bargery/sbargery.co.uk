@@ -163,7 +163,14 @@ section:last-child {
 .subDetails {
 	font-size: 0.8em;
 	font-style: italic;
-	margin-bottom: 3px;
+	margin-bottom: 15px;
+}
+.sDcompany {
+	display:inline;
+}
+.sDdate {
+	float:right;
+	clear: both;
 }
 
 .keySkills {
