@@ -24,3 +24,10 @@ I then used JavaScript to call the GET and POST API requests.
 I created a new GitHub repository for my Lambda functions so I could work on them locally and then deploy them automatically to AWS Lambda.
 
 Once pushed to GitHub, using GitHub Actions and workflow .yml files, both functions are unit tested using pytest with their corresponding test_*.py files and are then deployed to AWS Lambda.
+
+## Update: 30th July 2020 - Resume Added
+Today I added a page to this site containing my resume which you can view here: [my resume](https://www.sbargery.co.uk/resume.html).
+In a future update my resume will be contained within a json file which the webpage will retrieve its data from.
+
+## Update: 31st July 2020 - Blog written
+<p>I wrote a blog on creating this website which you can [read here](https://dev.to/stevenbargery/my-cloudresumechallenge-journey-2de4)
