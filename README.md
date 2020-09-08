@@ -30,4 +30,9 @@ Today I added a page to this site containing my resume which you can view here: 
 In a future update my resume will be contained within a json file which the webpage will retrieve its data from.
 
 ## Update: 31st July 2020 - Blog written
-<p>I wrote a blog on creating this website which you can [read here](https://dev.to/stevenbargery/my-cloudresumechallenge-journey-2de4)
+I wrote a blog on creating this website which you can [read here](https://dev.to/stevenbargery/my-cloudresumechallenge-journey-2de4)
+
+## Update: 4th September 2020 - Infrastructure as Code
+Used **AWS SAM** to automate the deployment of a Lambda function, API Gateway, DynamoDB table and IAM policies for the visitor count.
+
+The code of which can be found in this repo: https://github.com/steven-bargery/sbargery.co.uk_aws-sam
