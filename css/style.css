@@ -197,6 +197,60 @@ section:last-child {
 	padding-left:10px;
 }
 
+#lpi-badge {
+	width: 150px;
+/*	height: 270px;*/
+
+    border: 1px solid #e5e5e5;
+    color: #333;
+    font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: .88rem;
+    padding: 22px 0 0;
+    text-align: center;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#lpi-badge img {
+	margin: 0 0 22px;
+}
+
+#lpi-badge-name {
+	color: #333;
+	display: block;
+	font-size: 1rem;
+	line-height: 1.1em;
+	margin: 0 8px 8px;
+}
+
+#lpi-badge a:hover {
+	text-decoration:none;
+}
+
+#lpi-badge-issuer {
+	color: #666;
+	font-size: .81rem;
+	font-style: italic;
+	line-height: 1.1em;
+	margin: 0 8px;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+#provided {
+	background: #f0f0f0;
+	border-top: 1px solid #e2e2e2;
+	color: #b6b6b6;
+	font-size: .44rem;
+	line-height: 28px;
+	margin: 18px 0 0;
+	text-transform: uppercase;
+	-moz-border-radius: 0 0 3px 3px;
+	-webkit-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+}
+
 @media all and (min-width: 602px) and (max-width: 800px) {
 	#headshot {
 		display: none;
