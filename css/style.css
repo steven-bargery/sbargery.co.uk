@@ -148,7 +148,7 @@ section:last-child {
 
 .sectionContent {
 	float: right;
-	width: 72.5%;
+	width: 73%;
 }
 
 .sectionTitle h1 {
@@ -200,6 +200,9 @@ section:last-child {
 #lpi-badge {
 	width: 150px;
 /*	height: 270px;*/
+	margin-bottom: 20px;
+	margin-right: 4px;
+	float: left;
 
     border: 1px solid #e5e5e5;
     color: #333;
@@ -213,7 +216,7 @@ section:last-child {
 }
 
 #lpi-badge img {
-	margin: 0 0 22px;
+	margin: 0 0 29px;
 }
 
 #lpi-badge-name {
@@ -243,7 +246,7 @@ section:last-child {
 	border-top: 1px solid #e2e2e2;
 	color: #b6b6b6;
 	font-size: .44rem;
-	line-height: 28px;
+	line-height: 29px;
 	margin: 18px 0 0;
 	text-transform: uppercase;
 	-moz-border-radius: 0 0 3px 3px;
