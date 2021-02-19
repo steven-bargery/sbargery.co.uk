@@ -190,11 +190,24 @@ section:last-child {
 }
 
 .sectionContent ul {
-	padding-left:15px;
+  list-style: none;
+  padding: 0;
+}
+.sectionContent ul li {
+  padding-left: 1.5em;
+  text-align: justify;
+}
+.sectionContent ul li:before {
+  content: "\f105"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.5em; /* same as padding-left set on li */
+  width: 1.5em; /* same as padding-left set on li */
+  color: #a6a6a6;
 }
 
-.sectionContent ul li {
-	padding-left:10px;
+.sectionContent p {
+	text-align: justify;
 }
 
 #lpi-badge {
